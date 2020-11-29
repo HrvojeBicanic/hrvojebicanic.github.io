@@ -24,6 +24,7 @@
     h1 {
       font-size: 40px;
       font-family: monospace;
+      text-align: center;
     }
 
     h2 {
@@ -50,11 +51,34 @@
     .yellow-text {
       color: yellow;
     }
+
     .radio-text {
-      color:tomato;
+      color: tomato;
     }
 
     /*Text color end*/
+    /*Navigacija*/
+    #navigacija-sve {
+      text-align: right;
+    }
+
+    /*Navigacija kraj*/
+    /*Brojevi poredu*/
+    .brojevi {
+      width: 250px;
+      color: wheat;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .lista-naslov {
+      text-align: center;
+    }
+
+    naslov {
+
+    }
+
+    /*Brojevi poredu kraj*/
   </style>
   <!--css end-->
   <title>Welcome</title>
@@ -65,20 +89,24 @@
 <body>
 
   <!--Navigacija stranice-->
-  <a class="navigacija" href="index.html">Home</a>
-  <a class="navigacija" href="gallery.html">Gallery</a>
-  <a class="navigacija" href="about-us.html">About Us</a>
-  <a class="navigacija" href="contact.html">Contact</a>
+  <div id="navigacija-sve">
+    <a class="navigacija" href="index.html">Home</a>
+    <a class="navigacija" href="gallery.html">Gallery</a>
+    <a class="navigacija" href="about-us.html">About Us</a>
+    <a class="navigacija" href="contact.html">Contact</a>
+  </div>
+  <hr>
   <!--Navigacija stranice kraj-->
 
   <h1 id="naslov">Hello World v1</h1>
+  <hr>
   <h2 class="podnaslov">Halo svete ovo je podnaslov!</h2>
   <img class="thick-yellow-border tupac-img" src="img/tupac.jpeg" alt="tupac">
   <p class="opis">This is my first web site!</p>
 
   <!--Lista-->
-  <div class="first-background">
-    <p>Brojevi po redu:</p>
+  <div class="first-background brojevi">
+    <p class="lista-naslov"><u>Brojevi po redu:</u></p>
     <ol>
       <li>Prvi</li>
       <li>Drugi</li>
@@ -87,7 +115,7 @@
       <li>Peti</li>
     </ol>
   </div>
-  <p class="radio" ><u><b>Radio boxes:</b></u></p><br>
+  <p class="radio"><u><b>Radio boxes:</b></u></p><br>
   <p>Koilko polja mogu označiti?</p>
   <form>
     <label for="jedno"><input id="jedno" type="radio" name="jedno-više-dva"> Jedno</label>
